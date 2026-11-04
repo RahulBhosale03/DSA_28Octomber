@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class IntersectionOfArray_Brute {
+public class IntersectionOfArray_Optimal {
     public static void main(String[] args) {
 
         int [] nums1 = {1,1,1,2,2,3,3};
         int [] nums2 = {3,3,3,4};
 
-        int [] res = intersectionArray(nums1,nums2);
+        int [] res = IntersectionArray(nums1,nums2);
 
         System.out.println(Arrays.toString(res));
 
     }
-    public static int[] intersectionArray(int [] nums1 , int [] nums2) {
+    public static int[] IntersectionArray(int [] nums1 , int [] nums2) {
         int left = 0, right = 0;
 
         List<Integer> list = new ArrayList<>();
