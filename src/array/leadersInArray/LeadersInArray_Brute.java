@@ -3,10 +3,10 @@ package array.leadersInArray;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeadersInArray {
+public class LeadersInArray_Brute {
     public static void main(String[] args) {
         int [] nums = {1, 2, 5, 3, 1, 2};
-        LeadersInArray obj = new LeadersInArray();
+        LeadersInArray_Brute obj = new LeadersInArray_Brute();
         List<Integer> result = obj.leaders(nums);
         System.out.println(result);
     }
