@@ -2,10 +2,10 @@ package array.sort_Array_of_0s_1s_2s;
 
 import java.util.Arrays;
 
-public class SortArray_0s_1s_2s {
+public class SortArray_0s_1s_2s_Brute {
     public static void main(String[] args) {
         int [] nums = {2,0,2,1,1,0};
-        SortArray_0s_1s_2s obj = new SortArray_0s_1s_2s();
+        SortArray_0s_1s_2s_Brute obj = new SortArray_0s_1s_2s_Brute();
         obj.sortColors(nums);
         System.out.println(Arrays.toString(nums));
 
