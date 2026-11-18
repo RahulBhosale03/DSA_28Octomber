@@ -4,9 +4,9 @@ public class SetMatrix_Optimal {
     public static void main(String[] args) {
 
         int [][] matrix = {
-                {1,1,1},
-                {1,0,1},
-                {1,1,1}
+                {0, 1, 2},
+                {3, 4, 5},
+                {6, 7, 8}
         };
         SetMatrix_Optimal obj = new SetMatrix_Optimal();
         obj.setZeroes(matrix);
@@ -29,8 +29,8 @@ public class SetMatrix_Optimal {
                      if (i==0)firstRow = true;
                      if (j==0)firstCol = true;
 
-                     matrix[0][i] = 0;
-                     matrix[j][0] = 0;
+                     matrix[0][j] = 0;
+                     matrix[i][0] = 0;
                  }
              }
          }
