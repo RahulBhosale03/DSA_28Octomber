@@ -12,10 +12,10 @@ public class Kadane_Algo_Brute {
 
         int maxSum = Integer.MIN_VALUE;
         for(int i=0;i<nums.length;i++) {
-                int arrSum = 0;
+                int currSum = 0;
             for (int j=i;j<nums.length;j++) {
-                arrSum += nums[j];
-                maxSum = Math.max(maxSum,arrSum);
+                currSum += nums[j];
+                maxSum = Math.max(maxSum,currSum);
             }
         }
         return maxSum;
